@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+body {
+    background-image: url(/Fondo2.png);
+    background-size: cover;
+}
+
+
+@media (max-width: 576px) {
+    body {
+        background-size: auto;
+    }
+}

@@ -1,0 +1,157 @@
+/* 
+Colores:
+
+Primario: #0099ad
+Secundario: #6bcad6
+Terciario: #27ffbe
+Blanco:
+Negro:
+*/
+
+@font-face {
+    font-family: 'nimbus';
+    src: url('../../TAN-NIMBUS.ttf');
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 1px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(180deg, #6bcad6, #27ffbe);
+    border-radius: 0% 0% 5% 5%;
+}
+
+.logo-container {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo-text {
+    font: 1em;
+    font-weight: 100;
+    font-family: 'nimbus', 'sans-serif';
+    color: #000000;
+}
+
+.search-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+form > input {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+    border: none;
+} 
+
+form > button {
+    background-color: #6bcad6;
+    padding: 10px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+}
+
+form > button:hover {
+    color: white;
+}
+
+.user-container {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user {
+    width: 25%;
+    border-radius: 25%;
+    margin-bottom: 5px;
+}
+
+.session-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.nav-container li {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    border: solid #0099ad;
+    border-width: 0px 1px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'nimbus', 'sans-serif';
+    font-size: 1em;
+}
+
+.user-container .session-container > a {
+    text-decoration: none;
+    color: black;
+    font-family: 'nimbus', 'sans-serif';
+    font-size: 0.8em;
+}
+
+header h1:hover, .icon-header:hover, span:hover {
+    color: #0099ad;
+} 
+
+@media (max-width: 576px) {
+    .logo-container {
+        width: 25%;
+    }
+    .logo {
+        width: 50%;
+    }
+    .logo-text {
+        display: none;
+    }
+    .search-container {
+        width: 35%;
+    }
+    form {
+        width: 100%;
+    }
+    .user-container {
+        width: 40%;
+        
+    }
+    span {
+        display: none;
+    }
+}
