@@ -8,6 +8,37 @@ main {
 .Home {
     width: 100%;
 }
+
+.Home-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Home-container h1 {
+    padding: 10px 0px;
+    font-size: 2.5em;
+}
+
+.Home-container p {
+    width: 80%;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.Home-container ul {
+    width: 80%;
+}
+
+.Home-container ul li {
+    width: 100%;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
 /*
 .Home-container {
     width: 70%;
@@ -23,7 +54,7 @@ main {
     padding: 10px 0px;
 }
 
-.Home p {
+.Home-container p {
     width: 80%;
     font-size: 1em;
     font-family: 'nimbus';

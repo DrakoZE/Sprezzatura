@@ -2,6 +2,7 @@ import './../../App.css';
 import './Header.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSearch, faHome, faUser, faRightToBracket, faShirt, faShop, faPhone} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -14,10 +15,10 @@ function Header() {
                 </div>
                 <nav>
                 <ul className='nav-container'>
-                    <li><a href=""><FontAwesomeIcon className='icon-header' icon={faHome} /> <span>Pagina principal</span></a></li>
-                    <li><a href=""><FontAwesomeIcon className='icon-header' icon={faShirt} /><span>Nuestros productos</span></a></li>
-                    <li><a href=""><FontAwesomeIcon className='icon-header' icon={faShop} /><span>Sobre nosotros</span></a></li>
-                    <li><a href=""><FontAwesomeIcon className='icon-header' icon={faPhone} /><span>Contacto</span></a></li>
+                    <li><Link to="/"><FontAwesomeIcon className='icon-header' icon={faHome} /> <span>Pagina principal</span></Link></li>
+                    <li><Link to="/Product"><FontAwesomeIcon className='icon-header' icon={faShirt} /><span>Nuestros productos</span></Link></li>
+                    <li><Link to="/Enterprise"><FontAwesomeIcon className='icon-header' icon={faShop} /><span>Sobre nosotros</span></Link></li>
+                    <li><Link to="/Contact"><FontAwesomeIcon className='icon-header' icon={faPhone} /><span>Contacto</span></Link></li>
                 </ul>
             </nav>
         </header>
