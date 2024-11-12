@@ -18,7 +18,6 @@ function Header() {
                     <li><Link to="/"><FontAwesomeIcon className='icon-header' icon={faHome} /> <span>Pagina principal</span></Link></li>
                     <li><Link to="/Product"><FontAwesomeIcon className='icon-header' icon={faShirt} /><span>Nuestros productos</span></Link></li>
                     <li><Link to="/Enterprise"><FontAwesomeIcon className='icon-header' icon={faShop} /><span>Sobre nosotros</span></Link></li>
-                    <li><Link to="/Contact"><FontAwesomeIcon className='icon-header' icon={faPhone} /><span>Contacto</span></Link></li>
                 </ul>
             </nav>
         </header>
